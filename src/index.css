@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.subtitle {
+  @apply text-3xl border-b-4 border-primary w-fit;
+}
+
+.subtitleContainer {
+  @apply pt-10 py-2 px-8;
+}
