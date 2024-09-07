@@ -7,22 +7,25 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-secondary sticky top-0 z-20 flex w-full items-center justify-between p-4">
-      <div>
+    <nav className="bg-secondary sticky top-0 z-20 flex w-full items-center justify-between p-4 md:bg-white md:h-screen md:flex-col md:justify-start md:border-r-2 md:border-primary ">
+      {/* Profile Image */}
+      <div className="md:flex md:flex-col md:items-center">
         <img
           src="/img/profile-image.png"
           alt="Profile Picture"
-          className="w-10 rounded-full border-4 border-primary"
+          className="w-10 rounded-full border-4 border-primary md:w-28 md:h-28 md:mt-10 lg:w-44 lg:h-44"
         />
       </div>
-      <div className="relative">
+
+      {/* Hamburger Icon for Small Screens */}
+      <div className="relative md:w-full md:mt-10 md:flex-grow">
         {!isOpen ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth="1.5"
-            stroke="white"
+            stroke="black"
             className="size-6 md:hidden"
             onClick={toggleMenu}
           >
@@ -38,8 +41,8 @@ const Nav = () => {
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth="1.5"
-            stroke="white"
-            className="size-6"
+            stroke="black"
+            className="size-6 md:hidden"
             onClick={toggleMenu}
           >
             <path
@@ -50,14 +53,15 @@ const Nav = () => {
           </svg>
         )}
 
+        {/* Menu Links */}
         <div
-          className={`absolute top-11 -right-4 bg-secondary text-white w-screen h-96 flex flex-col items-center justify-evenly transition-all duration-300 ease-in-out transform ${
+          className={`absolute top-11 -right-4 bg-secondary text-white md:text-black w-screen h-96 flex flex-col items-center justify-evenly transition-all duration-300 ease-in-out transform md:w-full md:static md:flex md:justify-evenly md:space-y-6 md:pl-4 md:h-full md:bg-white
+          ${
             isOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"
-          } origin-top`}
+          } md:scale-y-100 md:opacity-100 origin-top`}
         >
-          {/* Menu List */}
-          <div>
-            <a href="#" className="mr-2">
+          <div className="flex justify-center items-center">
+            <a href="#" className="navLink">
               Resume
             </a>
             <svg
@@ -75,9 +79,10 @@ const Nav = () => {
               />
             </svg>
           </div>
-          <div>
-            <a href="#" className="mr-2">
-              About me
+
+          <div className="flex justify-center items-center">
+            <a href="#about" className="navLink">
+              About Me
             </a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -94,8 +99,9 @@ const Nav = () => {
               />
             </svg>
           </div>
-          <div>
-            <a href="#" className="mr-2">
+
+          <div className="flex justify-center items-center">
+            <a href="#projects" className="navLink">
               Projects
             </a>
             <svg
@@ -113,8 +119,9 @@ const Nav = () => {
               />
             </svg>
           </div>
-          <div>
-            <a href="#" className="mr-2">
+
+          <div className="flex justify-center items-center">
+            <a href="#" className="navLink">
               Contact
             </a>
             <svg

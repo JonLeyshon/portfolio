@@ -1,10 +1,14 @@
+import ProjectsCarousel from "./ProjectsCarousel";
+
 const Projects = () => {
   return (
-    <div className="bg-slate-200 ">
+    <div className="bg-white p-10" id="projects">
       <div className="subtitleContainer">
         <h2 className="subtitle">Projects</h2>
       </div>
-      <div></div>
+      <div>
+        <ProjectsCarousel />
+      </div>
     </div>
   );
 };
