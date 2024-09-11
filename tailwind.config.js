@@ -5,10 +5,11 @@ export default {
     extend: {
       colors: {
         primary: "#F28C43",
+        primaryDark: "#D97837", // Darker variant of the primary color
         secondary: "#EF9B5D",
       },
       animation: {
-        bounce: "bounce 2s 5",
+        bounce: "bounce 1.5s infinite",
       },
       keyframes: {
         bounce: {

@@ -1,7 +1,7 @@
 const ProjectWeather = () => {
   return (
     <div className="p-5">
-      <div className="relative group w-72 h-96 m-auto rounded-lg overflow-hidden">
+      <div className="relative group w-72 h-96 rounded-xl overflow-hidden shadow-lg transition-transform transform hover:scale-105">
         <img
           src="/img/Weather-demo.png"
           alt="Salt Games"
