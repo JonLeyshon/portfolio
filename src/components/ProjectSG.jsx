@@ -10,7 +10,7 @@ const ProjectSG = () => {
         />
 
         {/* Overlay on Hover */}
-        <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out p-4 space-y-4">
+        <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out p-4 space-y-4">
           {/* Project Title */}
           <h3 className="text-white text-xl font-bold">Salt Games</h3>
 

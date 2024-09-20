@@ -15,7 +15,7 @@
 }
 
 .navLink {
-  @apply mr-2 text-lg md:text-lg lg:text-2xl;
+  @apply mr-2 text-lg md:text-lg lg:text-2xl flex justify-center items-center gentleZoom;
 }
 
 .gentleZoom {

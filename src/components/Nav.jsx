@@ -62,17 +62,15 @@ const Nav = () => {
             isOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"
           } md:scale-y-100 md:opacity-100 origin-top`}
         >
-          <div className="flex justify-center items-center gentleZoom">
-            <a href="#about" className="navLink">
-              About Me
-            </a>
+          <a href="#about" className="navLink">
+            <p>About Me</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="size-6 inline-block"
+              className="size-6 inline-block ml-2"
             >
               <path
                 strokeLinecap="round"
@@ -80,18 +78,17 @@ const Nav = () => {
                 d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
               />
             </svg>
-          </div>
-          <div className="flex justify-center items-center gentleZoom">
-            <a href="#skills" className="navLink">
-              Skills
-            </a>
+          </a>
+
+          <a href="#skills" className="navLink ">
+            <p>Skills</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6"
+              class="size-6 ml-2"
             >
               <path
                 stroke-linecap="round"
@@ -104,19 +101,17 @@ const Nav = () => {
                 d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
               />
             </svg>
-          </div>
+          </a>
 
-          <div className="flex justify-center items-center gentleZoom">
-            <a href="#projects" className="navLink">
-              Projects
-            </a>
+          <a href="#projects" className="navLink">
+            <p>Projects</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="size-6 inline-block"
+              className="size-6 inline-block ml-2"
             >
               <path
                 strokeLinecap="round"
@@ -124,19 +119,17 @@ const Nav = () => {
                 d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z"
               />
             </svg>
-          </div>
+          </a>
 
-          <div className="flex justify-center items-center gentleZoom">
-            <a href="#contact" className="navLink">
-              Contact
-            </a>
+          <a href="#contact" className="navLink">
+            <p>Contact</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="size-6 inline-block"
+              className="size-6 inline-block ml-2"
             >
               <path
                 strokeLinecap="round"
@@ -144,7 +137,7 @@ const Nav = () => {
                 d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
               />
             </svg>
-          </div>
+          </a>
         </div>
       </div>
     </nav>

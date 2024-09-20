@@ -97,7 +97,7 @@ const About = () => {
 
               {/* Back-End Section */}
               <div className="w-4/5 border-primary border-4 m-10 text-center rounded-md mx-auto">
-                <div className="flex flex-col justify-center items-center py-2 px-8">
+                <div className="flex flex-col justify-center items-center p-4">
                   <h3
                     className="border-b-4 border-primary w-fit cursor-pointer md:cursor-default"
                     onClick={() => setSkillsOpen(skillsOpen === 2 ? null : 2)}
