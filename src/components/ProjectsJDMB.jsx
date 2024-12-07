@@ -1,18 +1,23 @@
 const ProjectsJMDB = () => {
   return (
-    <div className="p-5">
+    <div className="p-5 flex justify-center">
       <div className="relative group w-72 h-96 rounded-xl overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+        {/* Project Image */}
         <img
           src="/img/jmdb-demo.png"
           alt="JMDB"
           className="w-full h-full object-cover"
         />
+        {/* Overlay on Hover */}
         <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-between opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center p-4">
+          {/* Project Title */}
           <p className="text-white text-xl font-bold pb-2">JMDB</p>
+          {/* Project Description */}
           <p className="text-white">
             Full stack Movie information website. Learn more and keep track of
             your favourite movies.
           </p>
+          {/* Tech Stack */}
           <div className="text-white flex flex-wrap justify-evenly pt-2 font-bold gap-2">
             <p className="icon">React</p>
             <p className="icon">Redux</p>
@@ -22,7 +27,10 @@ const ProjectsJMDB = () => {
             <p className="icon">Express</p>
             <p className="icon">MySQL</p>
           </div>
+
+          {/* Links to GitHub and Live Demo */}
           <div className="flex justify-evenly w-full mt-5">
+            {/* GitHub Link */}
             <a
               href="https://github.com/JonLeyshon/JMDB"
               target="_blank"
@@ -53,6 +61,8 @@ const ProjectsJMDB = () => {
               </svg>
               <p className="text-white mt-1">Github</p>
             </a>
+            {/* Live Demo Link */}
+
             <a
               href="https://projects.jmdb.jonleyshoncodes.co.uk"
               target="_blank"

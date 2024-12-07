@@ -1,39 +1,38 @@
-const ProjectSG = () => {
+const ProjectPortfolio = () => {
   return (
     <div className="p-6 flex justify-center">
       <div className="relative group w-72 h-96 rounded-xl overflow-hidden shadow-lg transition-transform transform hover:scale-105">
         {/* Project Image */}
         <img
-          src="/img/saltgames-demo.png"
-          alt="Salt Games"
+          src="/img/portfoliodemo.png"
+          alt="Portfolio page"
           className="w-full h-full object-cover"
         />
 
         {/* Overlay on Hover */}
         <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out p-4 space-y-4">
           {/* Project Title */}
-          <h3 className="text-white text-xl font-bold">Salt Games</h3>
+          <h3 className="text-white text-xl font-bold">Personal Portfolio</h3>
 
           {/* Project Description */}
           <p className="text-white text-sm text-center">
-            Choose your speech sound and play a selection of 3 games in this
-            full-stack project.
+            A personal Portfolio page used to host all of my current projects.
           </p>
 
           {/* Tech Stack */}
           <div className="text-white flex flex-wrap justify-evenly pt-2 font-bold gap-2">
+            <span className="icon">Tailwind</span>
+            <span className="icon">Web hosting</span>
+            <span className="icon">Vite</span>
             <span className="icon">React</span>
-            <span className="icon">Redux</span>
             <span className="icon">Node</span>
-            <span className="icon">Express</span>
-            <span className="icon">MySQL</span>
           </div>
 
           {/* Links to GitHub and Live Demo */}
           <div className="flex space-x-6 mt-4">
             {/* GitHub Link */}
             <a
-              href="https://github.com/JonLeyshon/SALTGames"
+              href="https://github.com/JonLeyshon/portfolio"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center text-white transform transition-transform hover:scale-110"
@@ -55,7 +54,7 @@ const ProjectSG = () => {
 
             {/* Live Demo Link */}
             <a
-              href="https://projects.saltgames.jonleyshoncodes.co.uk"
+              href="https://www.jonleyshoncodes.co.uk"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center text-white transform transition-transform hover:scale-110"
@@ -83,4 +82,4 @@ const ProjectSG = () => {
   );
 };
 
-export default ProjectSG;
+export default ProjectPortfolio;

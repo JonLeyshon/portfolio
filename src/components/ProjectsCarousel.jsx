@@ -3,15 +3,21 @@ import "react-multi-carousel/lib/styles.css";
 import ProjectsJMDB from "./ProjectsJDMB";
 import ProjectSG from "./ProjectSG";
 import ProjectWeather from "./ProjectWeather";
+import ProjectPortfolio from "./ProjectsPortfolio";
+import ProjectWR from "./ProjectWR";
 
 const ProjectsCarousel = () => {
   const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
+    SuperLargeDesktop: {
+      breakpoint: { max: 4000, min: 2000 },
       items: 5,
     },
+    LargeDesktop: {
+      breakpoint: { max: 2000, min: 1500 },
+      items: 4,
+    },
     desktop: {
-      breakpoint: { max: 3000, min: 1300 },
+      breakpoint: { max: 1500, min: 1300 },
       items: 3,
     },
     tablet: {
@@ -26,6 +32,8 @@ const ProjectsCarousel = () => {
 
   return (
     <Carousel responsive={responsive} className="pt-10 pb-28">
+      <ProjectWR />
+      <ProjectPortfolio />
       <ProjectSG />
       <ProjectsJMDB />
       <ProjectWeather />
