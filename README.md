@@ -16,7 +16,11 @@ Project Showcase: View my portfolio of projects, including descriptions and link
 CV Hosting: Downloadable CV for potential employers or collaborators.
 About Me Section: A brief introduction to who I am, my passions, and my skills.
 Contact Page: An easy-to-use form to get in touch with me.
+
+
 **Tech Stack**
+
+
 Frontend: Tailwind CSS for styling and responsive design.
 Deployment: Hosted on host presto.
 This portfolio is designed to be more than a resume—it's an interactive showcase of my work, built with care to adapt beautifully across devices. Explore my projects, learn about my skills, and feel free to reach out through the contact page!
