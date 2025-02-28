@@ -1,17 +1,29 @@
 import React from "react";
+import { ReactTyped } from "react-typed";
 
 const LandingPage = () => {
   return (
     <div className="p-10">
       <div
-        className="text-white text-center flex flex-col justify-center h-screen"
+        className="text-landingText text-center flex flex-col justify-center h-screen"
         id="home"
       >
         <div>
-          <h1 className="text-8xl">Hi, I'm Jon.</h1>
+          <h1 className="text-8xl">
+            <ReactTyped
+              strings={["Hi, I'm Jon!"]}
+              showCursor={false}
+              typeSpeed={100}
+            />
+          </h1>
+          <h2 className=" text-2xl md:text-3xl lg:text-4xl mb-4">
+            Full-Stack Software Engineer | Liverpool, UK
+          </h2>
+          <p className="text md:text-lg lg:text-xl mb-4 ">
+            Two years of experience building responsive, user-friendly web
+            applications that look great on any device.
+          </p>
           <h2 className="text-xl p-8">
-            <span className="text-2xl font-bold">Full stack </span> engineer
-            from <span className="text-2xl font-bold"> Liverpool, UK</span>.
             Focus on
             <span className="text-2xl font-bold">
               {" "}
@@ -21,25 +33,6 @@ const LandingPage = () => {
           </h2>
         </div>
 
-        <div className="flex justify-center">
-          <a
-            href="https://www.linkedin.com/in/jon-leyshon-338534a9/"
-            target="_blank"
-          >
-            <img
-              className="w-20 mr-2 gentleZoom"
-              src="/img/linkedin.svg"
-              alt="LinkedIn Link"
-            />
-          </a>
-          <a href="https://github.com/JonLeyshon" target="_blank">
-            <img
-              className="w-20 gentleZoom"
-              src="/img/github.svg"
-              alt="GitHub Link"
-            />
-          </a>
-        </div>
         <div className="flex justify-center items-center gentleZoom mt-10 w-fit mx-auto">
           <a
             href="https://jonleyshoncodes.co.uk/JonLeyshon_CV_2024.pdf"

@@ -16,8 +16,8 @@ const ProjectWR = () => {
 
           {/* Project Description */}
           <p className="text-white text-sm text-center">
-            Looking back on my original weather app and improving this with my
-            improved skils to create a more asthetic and useful weather app.
+            Looking back on my original weather app and improving on this
+            concept to create a more asthetic and useful weather app.
           </p>
 
           {/* Tech Stack */}

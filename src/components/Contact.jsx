@@ -38,7 +38,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="p-10 bg-slate-100" id="contact">
+    <div className="p-10 bg-slate-100 text-mainText" id="contact">
       {/* Contact Title */}
       <div className="subtitleContainer">
         <h2 className="subtitle">Contact</h2>
@@ -53,7 +53,7 @@ const Contact = () => {
               I'm excited to connect with professionals and explore new
               opportunities!
             </h3>
-            <h4 className="text-base text-gray-600 mt-2">
+            <h4 className="text-base text-mainText mt-2">
               Whether you have a question, a collaboration idea, or a full-time
               developer role in mind, I would love to hear from you. Feel free
               to send me a message below or reach out directly via

@@ -31,7 +31,13 @@ const ProjectsCarousel = () => {
   };
 
   return (
-    <Carousel responsive={responsive} className="pt-10 pb-28">
+    <Carousel
+      responsive={responsive}
+      infinite={true}
+      removeArrowOnDeviceType={["tablet", "mobile"]}
+      keyBoardControl={true}
+      className="pt-10 pb-28"
+    >
       <ProjectWR />
       <ProjectPortfolio />
       <ProjectSG />

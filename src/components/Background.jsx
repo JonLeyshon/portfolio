@@ -2,7 +2,7 @@ import "../styles/background.css";
 const Background = () => {
   return (
     <>
-      <ul className="background">
+      <ul className="background bg-primary">
         <li></li>
         <li></li>
         <li></li>

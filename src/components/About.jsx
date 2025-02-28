@@ -4,7 +4,7 @@ const About = () => {
   const [skillsOpen, setSkillsOpen] = useState(null);
 
   return (
-    <div className="" id="about">
+    <div className="text-main" id="about">
       <div className="info p-10 bg-white ">
         <div className="subtitleContainer">
           <h2 className="subtitle">About Me</h2>
@@ -18,12 +18,12 @@ const About = () => {
 
           <p className="text-xl text-center p-1">
             I am a
-            <span className="text-primary font-bold">
+            <span className="text-highlight font-bold">
               {" "}
               Full Stack Developer{" "}
             </span>
             who completed the 30-week software engineering Bootcamp at
-            <span className="text-primary font-bold"> The Jump </span>
+            <span className="text-highlight font-bold"> The Jump </span>
             Digital School. The program gave me solid experience with
             JavaScript, React, Node.js, and both SQL and NoSQL databases. I
             worked on real-world projects that strengthened my skills in both

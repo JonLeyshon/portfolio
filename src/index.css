@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-primary: 173, 216, 230; /* LightBlue */
+  --color-secondary: 65, 105, 225; /* RoyalBlue */
+  --color-mainText: 55, 66, 77; /* Black */
+  --color-LandingText: 255, 255, 255; /* White */
+}
+
 .subtitle {
   @apply text-3xl border-b-4 border-primary w-fit;
 }
@@ -20,6 +27,23 @@
 
 .gentleZoom {
   @apply transform transition-transform duration-300 hover:scale-110;
+}
+
+/* Dynamic colours */
+.bg-primary {
+  background-color: rgb(var(--color-primary));
+}
+.bg-secondary {
+  background-color: rgb(var(--color-secondary));
+}
+.text-main {
+  color: rgb(var(--color-mainText));
+}
+.text-landing {
+  color: rgb(var(--color-LandingText));
+}
+.text-highlight {
+  color: rgb(var(--color-primary));
 }
 
 html {

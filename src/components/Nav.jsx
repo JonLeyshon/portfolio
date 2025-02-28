@@ -57,7 +57,7 @@ const Nav = () => {
 
         {/* Menu Links */}
         <div
-          className={`absolute top-11 -right-4 bg-secondary text-white md:text-black w-screen h-96 flex flex-col items-center justify-evenly transition-all duration-300 ease-in-out transform md:w-full md:static md:flex md:justify-evenly md:space-y-6 md:pl-4 md:h-full md:bg-white
+          className={`absolute top-11 -right-4 bg-secondary text-landingText md:text-mainText w-screen h-96 flex flex-col items-center justify-evenly transition-all duration-300 ease-in-out transform md:w-full md:static md:flex md:justify-evenly md:space-y-6 md:pl-4 md:h-full md:bg-white
           ${
             isOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"
           } md:scale-y-100 md:opacity-100 origin-top`}
