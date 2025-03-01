@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import Swal from "sweetalert2";
+import { motion } from "framer-motion"; // Import motion from framer-motion
 
 const Contact = () => {
   // Create a ref to store the form element
@@ -38,13 +39,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="p-10 bg-slate-100 text-mainText" id="contact">
+    <div className="p-10 text-mainText" id="contact">
       {/* Contact Title */}
       <div className="subtitleContainer">
         <h2 className="subtitle">Contact</h2>
       </div>
 
-      <div className="contactCard w-full p-10 bg-slate-100 flex flex-col items-center justify-center">
+      <div className="contactCard w-full p-10 flex flex-col items-center justify-center">
         {/* Intro Text and Form */}
         <div className="w-full flex flex-col items-center lg:flex-row lg:justify-between lg:gap-8">
           {/* Intro Text */}
@@ -53,7 +54,7 @@ const Contact = () => {
               I'm excited to connect with professionals and explore new
               opportunities!
             </h3>
-            <h4 className="text-base text-mainText mt-2">
+            <h4 className="text-mainText mt-2">
               Whether you have a question, a collaboration idea, or a full-time
               developer role in mind, I would love to hear from you. Feel free
               to send me a message below or reach out directly via
@@ -66,6 +67,7 @@ const Contact = () => {
                 <a
                   href="https://www.linkedin.com/in/jon-leyshon-338534a9/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   LinkedIn
                 </a>
@@ -74,8 +76,14 @@ const Contact = () => {
             </h4>
           </div>
 
-          {/* Contact Form */}
-          <div className="bg-slate-100 w-80 p-6 rounded-lg shadow-md border border-gray-200 lg:w-1/2">
+          {/* Contact Form with animation from the right */}
+          <motion.div
+            className="bg-slate-100 text-black w-80 p-6 rounded-lg shadow-md border border-gray-200 lg:w-1/2"
+            initial={{ opacity: 0, x: 50 }} // Start offscreen to the right
+            whileInView={{ opacity: 1, x: 0 }} // Animate into view from the right
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }} // Run once when 20% of the element is visible
+          >
             <form
               className="flex flex-col gap-4"
               onSubmit={onSubmit}
@@ -117,12 +125,12 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="bg-primary text-white p-3 rounded-md hover:bg-primaryDark transition duration-300"
+                className="bg-primary text-white p-3 rounded-md hoverSendButton transition duration-300"
               >
                 Send Message
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

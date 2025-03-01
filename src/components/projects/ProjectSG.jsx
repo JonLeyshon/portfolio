@@ -4,7 +4,7 @@ const ProjectSG = () => {
       <div className="relative group w-72 h-96 rounded-xl overflow-hidden shadow-lg transition-transform transform hover:scale-105">
         {/* Project Image */}
         <img
-          src="/img/saltgames-demo.png"
+          src="public/img/saltgames-demo.png"
           alt="Salt Games"
           className="w-full h-full object-cover"
         />

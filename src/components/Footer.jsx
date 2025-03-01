@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="flex justify-evenly items-center px-4 py-4 bg-white text-mainText">
+    <div className="flex justify-evenly items-center px-4 py-4  text-mainText">
       <div>
         <div>&copy; Jon Leyshon 2024</div>
       </div>

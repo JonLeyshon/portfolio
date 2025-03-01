@@ -1,4 +1,4 @@
-import "../styles/background.css";
+import "../../styles/background.css";
 const Background = () => {
   return (
     <>

@@ -3,20 +3,20 @@ import { ReactTyped } from "react-typed";
 
 const LandingPage = () => {
   return (
-    <div className="p-10">
+    <div className="px-10 py-10">
       <div
-        className="text-landingText text-center flex flex-col justify-center h-screen"
+        className="text-landingText text-center flex flex-col justify-evenly md:justify-center h-screen"
         id="home"
       >
         <div>
-          <h1 className="text-8xl">
+          <h1 className="text-6xl sm:text-7xl md:text-8xl h-28">
             <ReactTyped
               strings={["Hi, I'm Jon!"]}
               showCursor={false}
               typeSpeed={100}
             />
           </h1>
-          <h2 className=" text-2xl md:text-3xl lg:text-4xl mb-4">
+          <h2 className=" text-2xl md:text-3xl lg:text-4xl mb-4 ">
             Full-Stack Software Engineer | Liverpool, UK
           </h2>
           <p className="text md:text-lg lg:text-xl mb-4 ">
@@ -33,35 +33,32 @@ const LandingPage = () => {
           </h2>
         </div>
 
-        <div className="flex justify-center items-center gentleZoom mt-10 w-fit mx-auto">
+        <div className="flex justify-center items-center mt-10 w-fit mx-auto">
           <a
             href="https://jonleyshoncodes.co.uk/JonLeyshon_CV_2024.pdf"
             className="navLink"
             target="_blank"
           >
-            <p className="inline-block">Resume</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="size-6 inline-block ml-2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m.75 12 3 3m0 0 3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
-              />
-            </svg>
+            <button className="relative w-52 h-12 mt-8 rounded-xl mx-auto flex items-center justify-center overflow-hidden bg-white/20 backdrop-blur-md border border-white/30 shadow-lg transition-all duration-300 ease-out hover:scale-105 hover:border-white/50 active:scale-95">
+              <span className="relative z-10 flex items-center gap-2 text-black font-semibold text-sm tracking-wide">
+                Download CV
+                <img
+                  src="img/download.svg"
+                  alt="download"
+                  className="w-5 h-5 opacity-80 transition-opacity group-hover:opacity-100"
+                />
+              </span>
+              <span className="absolute inset-0 bg-white opacity-0 transition-opacity duration-300 group-hover:opacity-10"></span>
+              <span className="absolute inset-0 w-full h-full rounded-xl bg-gradient-to-r from-white/10 to-white/0 opacity-30"></span>
+            </button>
           </a>
         </div>
         <div>
           <a
-            href="#about"
-            className="flex flex-col justify-center items-center pt-40"
+            href="#skills"
+            className="flex flex-col justify-center items-center pt-10"
           >
-            <p className="text-2xl gentleZoom">About me...</p>
+            <p className="text-2xl gentleZoom">Skills</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
