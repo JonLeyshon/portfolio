@@ -8,11 +8,14 @@ import Contact from "./contact/Contact";
 
 const Main = () => {
   return (
-    <main className="sans md:col-span-4 text-white">
+    <main className="sans md:col-span-4 text-white  overflow-hidden">
       <Background />
       <LandingPage />
-      <div className="border-t border-gray-400 dark:border-gray-300 w-3/4 mx-auto" />
-      {/* <About /> */}
+      <div
+        className="border-t border-gray-400 dark:border-gray-300 w-3/4 mx-auto"
+        id="skills"
+      />
+
       <Skills />
       <div className="border-t border-gray-400 dark:border-gray-300 w-3/4 mx-auto" />
 

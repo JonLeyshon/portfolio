@@ -56,7 +56,7 @@ const LandingPage = () => {
         <div>
           <a
             href="#skills"
-            className="flex flex-col justify-center items-center pt-10"
+            className="flex flex-col justify-center items-center md:pt-10"
           >
             <p className="text-2xl gentleZoom">Skills</p>
             <svg
@@ -65,7 +65,7 @@ const LandingPage = () => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-12 animate-bounce mt-2 gentleZoom"
+              className="w-12 animate-bounce md:mt-2 gentleZoom"
             >
               <path
                 strokeLinecap="round"

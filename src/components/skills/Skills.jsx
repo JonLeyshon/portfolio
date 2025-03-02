@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <div id="skills" className="mt-10">
+    <div className="mt-10">
       <div className="subtitleContainer">
         <h2 className="subtitle">Skills</h2>
       </div>

@@ -7,7 +7,7 @@ function App() {
     <div className="md:grid grid-cols-5">
       <Nav className="md:col-span-1" />
       <Main />
-      <Theme />
+      {/* <Theme /> */}
     </div>
   );
 }

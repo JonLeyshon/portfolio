@@ -5,8 +5,8 @@ const ProjectsSolarSystem = () => {
         <div className="relative group w-72 h-96 rounded-xl overflow-hidden shadow-lg transition-transform transform hover:scale-105">
           {/* Project Image */}
           <img
-            src="public/img/solarsystem.png"
-            alt="JMDB"
+            src="/img/solarsystem.png"
+            alt="SolarSystem"
             className="w-full h-full object-cover"
           />
           {/* Overlay on Hover */}
